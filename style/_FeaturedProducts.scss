@@ -1,0 +1,104 @@
+.ChairContent {
+    h4 {
+        text-align: center;
+        @include HeaderOnly;
+    }
+    .Color {
+        display: flex;
+        justify-content: center;
+        margin-top: 53px;
+        div {
+            background-color: #00009D;
+            width: 24px;
+            height: 4px;
+            border-radius: 10px;
+            background-color: #F701A8;
+            opacity: 0.5;
+            margin-right: 7px;
+            &:nth-child(1) {
+                opacity: 1;
+            }
+            &:hover {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+    }
+    .Content {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1144px;
+        margin: auto;
+        .ChairImg {
+            text-align: center;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+            &:hover {
+                background-color: $blue;
+                transition: 2s;
+                transform: scale(1.1);
+                .Purchase {
+                    .Font {
+                        display: block;
+                    }
+                }
+                .Cantilever {
+                    span {
+                        color: $white;
+                    }
+                    p {
+                        color: $white;
+                    }
+                }
+            }
+            .Cantilever {
+                p {
+                    @include ContentH4;
+                    margin-bottom: 12px;
+                }
+                span {
+                    display: block;
+                    @include CotentP;
+                    margin: 12px 0;
+                }
+                .colors {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 52px;
+                    margin: auto;
+                    div {
+                        width: 14px;
+                        height: 4px;
+                        border-radius: 10px;
+                        &:nth-child(1) {
+                            background: #05E6B7;
+                        }
+                        &:nth-child(2) {
+                            background: #F701A8;
+                        }
+                        &:nth-child(3) {
+                            background: #00009D;
+                        }
+                    }
+                }
+            }
+            .Purchase {
+                width: 270px;
+                height: 230px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                background: #F6F7FB;
+                .Font {
+                    position: absolute;
+                    display: none;
+                    top: 10px;
+                    left: 10px;
+                    i {
+                        margin-right: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.BannerSec {
+    background-color: #F2F0FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    .FirstImg {
+        img {
+            width: 387px;
+            position: absolute;
+            height: 387px;
+            top: 0;
+            left: -100px;
+            animation: candle 2s ease-in-out;
+        }
+        @keyframes candle {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0.5;
+            }
+        }
+    }
+    .banner {
+        width: 100%;
+        max-width: 1140px;
+        margin: auto;
+        .Furniture {
+            width: 80%;
+            margin: auto;
+            .Rose {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 28px;
+                color: $pink;
+            }
+        }
+        h1 {
+            font-family: 'Josefin Sans';
+            font-weight: 700;
+            font-size: 53px;
+            line-height: 52px;
+            letter-spacing: 0.015em;
+            color: #000000;
+            width: 625px;
+            ;
+        }
+        p {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 28px;
+            color: $list;
+            margin: 12px 0;
+            width: 560px;
+        }
+        button {
+            width: 163px;
+            height: 50px;
+            background-color: $pink;
+            margin-top: 27px;
+            border: none;
+            color: $white;
+        }
+    }
+    .SecondImg {
+        img {
+            position: absolute;
+            bottom: 10px;
+            top: 15%;
+            right: 20px;
+            width: 429px;
+            height: 429px;
+            animation: chair 2s ease-in-out;
+        }
+        @keyframes chair {
+            0% {
+                transform: translateX(100%);
+                opacity: 0.5;
+            }
+        }
+    }
+}

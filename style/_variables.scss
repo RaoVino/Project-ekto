@@ -1,0 +1,78 @@
+    $pink:#FB2E86;
+    $red:#FB2448;
+    $blue:#2F1AC4;
+    $OffNavyBlue:#3F509E;
+    $navyblue:#151875;
+    $pantonePurple:#E0D3F5;
+    $purple:#7E33E0;
+    $OffPurple:#9F63B5;
+    $white:#FFFFFF;
+    $list:#8A8FB9;
+    $background:#F7F7F7;
+    @mixin Joshfin {
+        font-family: 'Josefin Sans';
+        color: $white;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    
+    @mixin ContentH4 {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: $pink;
+    }
+    
+    @mixin CotentP {
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: $navyblue;
+    }
+    
+    @mixin FooterPara {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 35px;
+        color: $list;
+    }
+    
+    @mixin FooterLi {
+        font-family: 'Josefin Sans';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
+    }
+    
+    @mixin FooterLink {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 35px;
+        color: $list;
+    }
+    
+    @mixin HeaderOnly {
+        font-family: 'Josefin Sans';
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 49px;
+        color: #1A0B5B;
+    }
+    
+    @mixin LatestList {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $navyblue;
+    }

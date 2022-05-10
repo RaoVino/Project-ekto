@@ -1,0 +1,103 @@
+.head {
+    background-color: $purple;
+    .HeaderFirst {
+        max-width: 1366px;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        background-color: $purple;
+        padding: 20px;
+        .Contact {
+            display: flex;
+            p {
+                margin-right: 20px;
+                color: $white
+            }
+            a {
+                color: $white;
+                margin-left: 10px;
+            }
+        }
+        .LinkSec {
+            ul {
+                display: flex;
+                li {
+                    margin-right: 20px;
+                    &:nth-child(2)::after {
+                        content: "";
+                        background-image: url(../images/DownArrow.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        padding: 10px;
+                    }
+                    &:nth-child(1)::after {
+                        content: "";
+                        background-image: url(../images/DownArrow.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        padding: 10px;
+                    }
+                    a {
+                        @include Joshfin;
+                        &::active {
+                            color: $pink;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.HeaderSecond {
+    max-width: 1366px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: $white;
+    align-items: center;
+    .HomeLink {
+        ul {
+            display: flex;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 400;
+            li {
+                margin-left: 20px;
+                &:nth-child(1)::after {
+                    content: "";
+                    background-image: url(../images/PinkDownArrow.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    padding: 10px;
+                }
+                a {
+                    color: #0D0E43;
+                    &:active {
+                        color: $pink;
+                    }
+                }
+            }
+        }
+    }
+    .LoginSec {
+        display: flex;
+        input {
+            width: 200px;
+            height: 30px;
+            border: 2px solid #E7E6EF;
+            outline: none;
+            border-right: none;
+        }
+        i {
+            background-color: $pink;
+            height: 30px;
+            padding: 8px;
+            align-items: center;
+            color: $white;
+        }
+    }
+}

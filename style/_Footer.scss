@@ -1,0 +1,54 @@
+.FooterSec {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 20px;
+    max-width: 1140px;
+    margin: auto;
+    .Hekto {
+        .SignUp {
+            display: flex;
+        }
+        input {
+            width: 200px;
+            height: 30px;
+            border: 2px solid #E7E6EF;
+            outline: none;
+            border-right: none;
+            margin: 31px 0;
+            text-align: center;
+        }
+        button {
+            background-color: $pink;
+            width: 100px;
+            height: 30px;
+            align-items: center;
+            color: $white;
+            text-align: center;
+            outline: none;
+            border: none;
+            margin: 31px 0;
+        }
+    }
+    p {
+        @include FooterPara;
+    }
+    li {
+        a {
+            @include FooterLink;
+        }
+    }
+}
+
+.AllRights {
+    display: flex;
+    color: $list;
+    justify-content: space-around;
+    background-color: #E7E4F8;
+    padding: 20px;
+    div {
+        a {
+            margin-right: 10px;
+        }
+    }
+}

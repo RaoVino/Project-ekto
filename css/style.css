@@ -1,0 +1,902 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap");
+.head {
+  background-color: #7E33E0;
+}
+.head .HeaderFirst {
+  max-width: 1366px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: #7E33E0;
+  padding: 20px;
+}
+.head .HeaderFirst .Contact {
+  display: flex;
+}
+.head .HeaderFirst .Contact p {
+  margin-right: 20px;
+  color: #FFFFFF;
+}
+.head .HeaderFirst .Contact a {
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+.head .HeaderFirst .LinkSec ul {
+  display: flex;
+}
+.head .HeaderFirst .LinkSec ul li {
+  margin-right: 20px;
+}
+.head .HeaderFirst .LinkSec ul li:nth-child(2)::after {
+  content: "";
+  background-image: url(../images/DownArrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px;
+}
+.head .HeaderFirst .LinkSec ul li:nth-child(1)::after {
+  content: "";
+  background-image: url(../images/DownArrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px;
+}
+.head .HeaderFirst .LinkSec ul li a {
+  font-family: "Josefin Sans";
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
+.head .HeaderFirst .LinkSec ul li a::active {
+  color: #FB2E86;
+}
+
+.HeaderSecond {
+  max-width: 1366px;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: #FFFFFF;
+  align-items: center;
+}
+.HeaderSecond .HomeLink ul {
+  display: flex;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+.HeaderSecond .HomeLink ul li {
+  margin-left: 20px;
+}
+.HeaderSecond .HomeLink ul li:nth-child(1)::after {
+  content: "";
+  background-image: url(../images/PinkDownArrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px;
+}
+.HeaderSecond .HomeLink ul li a {
+  color: #0D0E43;
+}
+.HeaderSecond .HomeLink ul li a:active {
+  color: #FB2E86;
+}
+.HeaderSecond .LoginSec {
+  display: flex;
+}
+.HeaderSecond .LoginSec input {
+  width: 200px;
+  height: 30px;
+  border: 2px solid #E7E6EF;
+  outline: none;
+  border-right: none;
+}
+.HeaderSecond .LoginSec i {
+  background-color: #FB2E86;
+  height: 30px;
+  padding: 8px;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.FooterSec {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding: 20px;
+  max-width: 1140px;
+  margin: auto;
+}
+.FooterSec .Hekto .SignUp {
+  display: flex;
+}
+.FooterSec .Hekto input {
+  width: 200px;
+  height: 30px;
+  border: 2px solid #E7E6EF;
+  outline: none;
+  border-right: none;
+  margin: 31px 0;
+  text-align: center;
+}
+.FooterSec .Hekto button {
+  background-color: #FB2E86;
+  width: 100px;
+  height: 30px;
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin: 31px 0;
+}
+.FooterSec p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: #8A8FB9;
+}
+.FooterSec li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: #8A8FB9;
+}
+
+.AllRights {
+  display: flex;
+  color: #8A8FB9;
+  justify-content: space-around;
+  background-color: #E7E4F8;
+  padding: 20px;
+}
+.AllRights div a {
+  margin-right: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.Hek a {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 34px;
+  color: #0D0E43;
+}
+
+button {
+  cursor: pointer;
+}
+
+h4 {
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  margin: 48px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.BannerSec {
+  background-color: #F2F0FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.BannerSec .FirstImg img {
+  width: 387px;
+  position: absolute;
+  height: 387px;
+  top: 0;
+  left: -100px;
+  animation: candle 2s ease-in-out;
+}
+@keyframes candle {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0.5;
+  }
+}
+.BannerSec .banner {
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+}
+.BannerSec .banner .Furniture {
+  width: 80%;
+  margin: auto;
+}
+.BannerSec .banner .Furniture .Rose {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FB2E86;
+}
+.BannerSec .banner h1 {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 52px;
+  letter-spacing: 0.015em;
+  color: #000000;
+  width: 625px;
+}
+.BannerSec .banner p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #8A8FB9;
+  margin: 12px 0;
+  width: 560px;
+}
+.BannerSec .banner button {
+  width: 163px;
+  height: 50px;
+  background-color: #FB2E86;
+  margin-top: 27px;
+  border: none;
+  color: #FFFFFF;
+}
+.BannerSec .SecondImg img {
+  position: absolute;
+  bottom: 10px;
+  top: 15%;
+  right: 20px;
+  width: 429px;
+  height: 429px;
+  animation: chair 2s ease-in-out;
+}
+@keyframes chair {
+  0% {
+    transform: translateX(100%);
+    opacity: 0.5;
+  }
+}
+
+.ChairContent h4 {
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  color: #1A0B5B;
+}
+.ChairContent .Color {
+  display: flex;
+  justify-content: center;
+  margin-top: 53px;
+}
+.ChairContent .Color div {
+  background-color: #00009D;
+  width: 24px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #F701A8;
+  opacity: 0.5;
+  margin-right: 7px;
+}
+.ChairContent .Color div:nth-child(1) {
+  opacity: 1;
+}
+.ChairContent .Color div:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.ChairContent .Content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1144px;
+  margin: auto;
+}
+.ChairContent .Content .ChairImg {
+  text-align: center;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+.ChairContent .Content .ChairImg:hover {
+  background-color: #2F1AC4;
+  transition: 2s;
+  transform: scale(1.1);
+}
+.ChairContent .Content .ChairImg:hover .Purchase .Font {
+  display: block;
+}
+.ChairContent .Content .ChairImg:hover .Cantilever span {
+  color: #FFFFFF;
+}
+.ChairContent .Content .ChairImg:hover .Cantilever p {
+  color: #FFFFFF;
+}
+.ChairContent .Content .ChairImg .Cantilever p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FB2E86;
+  margin-bottom: 12px;
+}
+.ChairContent .Content .ChairImg .Cantilever span {
+  display: block;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #151875;
+  margin: 12px 0;
+}
+.ChairContent .Content .ChairImg .Cantilever .colors {
+  display: flex;
+  justify-content: space-around;
+  width: 52px;
+  margin: auto;
+}
+.ChairContent .Content .ChairImg .Cantilever .colors div {
+  width: 14px;
+  height: 4px;
+  border-radius: 10px;
+}
+.ChairContent .Content .ChairImg .Cantilever .colors div:nth-child(1) {
+  background: #05E6B7;
+}
+.ChairContent .Content .ChairImg .Cantilever .colors div:nth-child(2) {
+  background: #F701A8;
+}
+.ChairContent .Content .ChairImg .Cantilever .colors div:nth-child(3) {
+  background: #00009D;
+}
+.ChairContent .Content .ChairImg .Purchase {
+  width: 270px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #F6F7FB;
+}
+.ChairContent .Content .ChairImg .Purchase .Font {
+  position: absolute;
+  display: none;
+  top: 10px;
+  left: 10px;
+}
+.ChairContent .Content .ChairImg .Purchase .Font i {
+  margin-right: 12px;
+}
+
+.LatestSec h4 {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  color: #1A0B5B;
+  margin: 20px 0;
+  text-align: center;
+}
+.LatestSec .Allimages {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  justify-content: space-between;
+  margin: auto;
+}
+.LatestSec .Allimages .ProductsLogo .ChairProduct {
+  width: 370px;
+  height: 277px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F7F7F7;
+}
+.LatestSec .Allimages .ProductsLogo .ChairProduct:hover {
+  transition: 1s;
+  transform: scale(1.1);
+  background-color: #FFFFFF;
+}
+.LatestSec .Allimages .ProductsLogo .ChairProduct:hover .Fonts {
+  display: block;
+}
+.LatestSec .Allimages .ProductsLogo .ChairProduct img {
+  width: 223px;
+  height: 229px;
+}
+.LatestSec .Allimages .ProductsLogo .ChairProduct .Fonts {
+  position: absolute;
+  left: 20px;
+  bottom: 61px;
+  display: none;
+}
+.LatestSec .Allimages .ProductsLogo .ChairProduct .Fonts img {
+  position: absolute;
+  bottom: 150px;
+  width: 84px;
+  height: 56px;
+}
+.LatestSec .Allimages .ProductsLogo .ChairProduct .Fonts i {
+  display: block;
+  margin-bottom: 8px;
+}
+.LatestSec .Allimages .ProductsLogo .Comfort {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 100px 0;
+}
+.LatestSec .Allimages .ProductsLogo .Comfort p {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #151875;
+}
+.LatestSec .Allimages .ProductsLogo .Comfort .Doller span {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #151875;
+}
+.LatestSec .Allimages .ProductsLogo .Comfort .Doller span:nth-child(2) {
+  color: #FB2448;
+  text-decoration: line-through;
+}
+.LatestSec .Late ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 58px;
+}
+.LatestSec .Late ul li a {
+  margin-right: 20px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #151875;
+}
+.LatestSec .Late ul li a:active {
+  color: #FB2E86;
+}
+
+.WhatShopex {
+  margin-bottom: 100px;
+}
+.WhatShopex h4 {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  color: #1A0B5B;
+  margin: 20px 0;
+  text-align: center;
+}
+.WhatShopex .SupportOffer {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+}
+.WhatShopex .SupportOffer .Support {
+  width: 270px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+  text-align: center;
+}
+.WhatShopex .SupportOffer .Support img {
+  margin: 56px 0 27px 0;
+}
+.WhatShopex .SupportOffer .Support p {
+  width: 217px;
+  height: 85px;
+  text-align: center;
+  margin: auto;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(26, 11, 91, 0.3);
+}
+.WhatShopex .SupportOffer .Support span {
+  display: block;
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  color: #151875;
+  margin: 20px;
+}
+
+.BigSofa {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1140px;
+  margin: auto;
+}
+.BigSofa .UniqueFeatures h1 {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  color: #1A0B5B;
+  margin: 20px 0;
+  font-size: 35px;
+  color: #151875;
+}
+.BigSofa .UniqueFeatures p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(26, 11, 91, 0.3);
+  margin-bottom: 13px;
+}
+.BigSofa .UniqueFeatures .Button {
+  display: flex;
+  align-items: center;
+}
+.BigSofa .UniqueFeatures .Button p {
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151875;
+  margin: 25px 0 0 9px;
+}
+.BigSofa .UniqueFeatures .Button span {
+  display: block;
+  margin-top: 5px;
+}
+.BigSofa .UniqueFeatures button {
+  width: 163px;
+  height: 50px;
+  background-color: #FB2E86;
+  margin-top: 27px;
+  border: none;
+  color: #FFFFFF;
+}
+.BigSofa .UniqueFeatures ul li {
+  width: 461px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(26, 11, 91, 0.3);
+  margin-bottom: 13px;
+  display: flex;
+}
+.BigSofa .UniqueFeatures ul li::before {
+  content: "•";
+  color: red;
+  font-weight: bold;
+  display: block;
+  margin-right: 1em;
+}
+
+.Trending {
+  margin-bottom: 100px;
+}
+.Trending h4 {
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  color: #1A0B5B;
+}
+.Trending .Trend {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1144px;
+  margin: auto;
+}
+.Trending .Trend .TrendImg {
+  text-align: center;
+}
+.Trending .Trend .TrendImg .Purchased {
+  background-color: #f5f6f8;
+  width: 247px;
+  height: 244px;
+}
+.Trending .Trend .TrendImg .Purchased img {
+  width: 187px;
+  height: 187px;
+}
+.Trending .Trend .TrendImg .Cantile {
+  margin-bottom: 32px;
+}
+.Trending .Trend .TrendImg .Cantile p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FB2E86;
+  color: #151875;
+  margin: 12px 0;
+}
+.Trending .Trend .TrendImg .Cantile span {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #151875;
+}
+.Trending .Trend .TrendImg .Cantile span:nth-child(3) {
+  text-decoration: line-through;
+  color: rgba(26, 11, 91, 0.3);
+}
+
+.ClockSec {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+}
+.ClockSec .Clock {
+  width: 410px;
+  height: 270px;
+  position: relative;
+  padding: 20px;
+  background: #FFF6FB;
+  box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+}
+.ClockSec .Clock h3 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 26px;
+  color: #151875;
+  margin-bottom: 11px;
+}
+.ClockSec .Clock p a {
+  color: #FB2E86;
+  text-decoration: underline;
+}
+.ClockSec .Clock img {
+  text-align: right;
+  position: absolute;
+  left: 192px;
+}
+.ClockSec .Clocked {
+  width: 410px;
+  height: 270px;
+  position: relative;
+  background: #EEEFFB;
+  padding: 20px;
+  box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+}
+.ClockSec .Clocked h3 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 26px;
+  color: #151875;
+  margin-bottom: 11px;
+}
+.ClockSec .Clocked p a {
+  color: #FB2E86;
+  text-decoration: underline;
+}
+.ClockSec .Clocked img {
+  text-align: right;
+  position: absolute;
+  Left: 80px;
+  bottom: 10px;
+}
+.ClockSec .Executive .ExecutiveChair {
+  display: flex;
+  align-items: center;
+}
+.ClockSec .Executive .ExecutiveChair .Exe {
+  width: 107px;
+  background-color: #f5f6f8;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ClockSec .Executive .ExecutiveChair p {
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #151875;
+  margin: 10px 0 0 9px;
+}
+.ClockSec .Executive .ExecutiveChair span {
+  display: block;
+  margin-top: 10px;
+  text-decoration: line-through;
+}
+
+.DiscountSec {
+  background-color: transparent;
+  margin-top: 100px;
+}
+.DiscountSec h4 {
+  text-align: center;
+}
+.DiscountSec .LatestSec .Late li a::after {
+  content: "•";
+  color: #FB2E86;
+  font-weight: bold;
+  margin-left: 0.5em;
+  display: inline-block;
+  visibility: hidden;
+}
+.DiscountSec .LatestSec .Late li a:hover {
+  color: #FB2E86;
+  text-decoration: underline;
+}
+.DiscountSec .LatestSec .Late li a:hover::after {
+  visibility: visible;
+  text-decoration: none !important;
+}
+.DiscountSec .BigSofa {
+  flex-direction: row-reverse;
+}
+.DiscountSec .BigSofa img {
+  width: 600px;
+  flex-basis: 35%;
+}
+.DiscountSec .BigSofa .UniqueFeatures {
+  flex-basis: 65%;
+}
+.DiscountSec .BigSofa .UniqueFeatures h5 {
+  color: #FB2E86;
+  margin: 16px 0;
+}
+.DiscountSec .BigSofa .UniqueFeatures ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.DiscountSec .BigSofa .UniqueFeatures ul li {
+  flex-basis: 50%;
+}
+.DiscountSec .BigSofa .UniqueFeatures ul li::before {
+  content: "✓";
+  color: #7569B2;
+}
+
+.MiniCategories .Trending {
+  margin-top: 100px;
+}
+.MiniCategories .Trending .Trend .TrendImg .Purchased {
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MiniCategories .Trending .Trend .TrendImg .Purchased img {
+  width: 149px;
+  height: 149px;
+}
+.MiniCategories .Trending .Trend .TrendImg .Purchased:hover {
+  box-shadow: -9px 6px 0px #9877e7;
+  transform: scale(1);
+  transition: 1.5s;
+}
+
+.NewsLater {
+  background-image: url(../images/Trending/Newslater.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 462px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.NewsLater button {
+  width: 163px;
+  height: 50px;
+  background-color: #FB2E86;
+  margin-top: 27px;
+  border: none;
+  color: #FFFFFF;
+}
+.NewsLater h4 {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  color: #1A0B5B;
+  width: 648px;
+  line-height: 60px;
+}
+
+.BrandSec {
+  max-width: 1140px;
+  width: 904px;
+  margin: auto;
+}
+
+.Essential {
+  margin-top: 100px;
+}
+.Essential .SupportOffer {
+  justify-content: space-between;
+}
+.Essential .SupportOffer .Support {
+  width: 370px;
+  box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+  border-radius: 5px;
+}
+.Essential .SupportOffer .Support:hover .ReadMore h4 {
+  color: #FB2E86;
+}
+.Essential .SupportOffer .Support:hover .ReadMore a {
+  color: #FB2E86;
+}
+.Essential .SupportOffer .Support .ReadMore {
+  text-align: left;
+}
+.Essential .SupportOffer .Support .ReadMore span {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #151875;
+  display: inline-block;
+  text-align: left;
+}
+.Essential .SupportOffer .Support .ReadMore span i {
+  margin-right: 8px;
+}
+.Essential .SupportOffer .Support .ReadMore span a {
+  text-align: left;
+  text-decoration: underline;
+}
+.Essential .SupportOffer .Support .ReadMore h4 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FB2E86;
+  font-family: "Josefin Sans";
+  color: #151875;
+  margin: 31px 0 17px 19px;
+  text-align: left;
+}
+.Essential .SupportOffer .Support .ReadMore p {
+  text-align: left;
+  width: 297px;
+  margin: 0 0 14px 19px;
+}
+
+/*# sourceMappingURL=style.css.map */
