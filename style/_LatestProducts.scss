@@ -10,6 +10,9 @@
         max-width: 1140px;
         justify-content: space-between;
         margin: auto;
+        @media screen and (max-width: 1112px) {
+            justify-content: space-around;
+        }
         .ProductsLogo {
             .ChairProduct {
                 width: 370px;
@@ -19,6 +22,9 @@
                 justify-content: center;
                 align-items: center;
                 background: #F7F7F7;
+                @media screen and (max-width: 1112px) {
+                    width: 335px;
+                }
                 &:hover {
                     transition: 1s;
                     transform: scale(1.1);
@@ -96,11 +102,15 @@
         max-width: 1140px;
         margin: auto;
         display: flex;
+        justify-content: space-around;
         .Support {
             width: 270px;
             background-color: $white;
             box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
             text-align: center;
+            @media screen and (max-width: 1112px) {
+                width: 240px;
+            }
             img {
                 margin: 56px 0 27px 0;
             }
@@ -131,6 +141,12 @@
     justify-content: space-evenly;
     max-width: 1140px;
     margin: auto;
+    img {
+        width: 100%;
+        @media screen and (max-width: 1112px) {
+            width: 50%;
+        }
+    }
     .UniqueFeatures {
         h1 {
             @include HeaderOnly;

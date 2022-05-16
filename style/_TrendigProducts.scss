@@ -1,293 +1,331 @@
-    .Trending {
-        margin-bottom: 100px;
-        h4 {
-            text-align: center;
-            @include HeaderOnly;
+.Trending {
+    margin-bottom: 100px;
+    h4 {
+        text-align: center;
+        @include HeaderOnly;
+    }
+    .Trend {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1144px;
+        margin: auto;
+        @media screen and (max-width: 1112px) {
+            justify-content: space-around;
         }
-        .Trend {
-            display: flex;
-            justify-content: space-between;
-            max-width: 1144px;
-            margin: auto;
-            .TrendImg {
-                text-align: center;
-                .Purchased {
-                    background-color: #f5f6f8;
-                    width: 247px;
-                    height: 244px;
-                    img {
-                        width: 187px;
-                        height: 187px;
-                    }
+        .TrendImg {
+            text-align: center;
+            .Purchased {
+                background-color: #f5f6f8;
+                width: 247px;
+                height: 244px;
+                img {
+                    width: 187px;
+                    height: 187px;
                 }
-                .Cantile {
-                    margin-bottom: 32px;
-                    p {
-                        @include ContentH4;
-                        color: $navyblue;
-                        margin: 12px 0;
-                    }
-                    span {
-                        @include CotentP;
-                        &:nth-child(3) {
-                            text-decoration: line-through;
-                            color: rgba(26, 11, 91, 0.3);
-                        }
+            }
+            .Cantile {
+                margin-bottom: 32px;
+                p {
+                    @include ContentH4;
+                    color: $navyblue;
+                    margin: 12px 0;
+                }
+                span {
+                    @include CotentP;
+                    &:nth-child(3) {
+                        text-decoration: line-through;
+                        color: rgba(26, 11, 91, 0.3);
                     }
                 }
             }
         }
     }
-    
-    .ClockSec {
-        display: flex;
-        justify-content: space-between;
-        max-width: 1140px;
-        margin: auto;
-        .Clock {
-            width: 410px;
-            height: 270px;
-            position: relative;
-            padding: 20px;
-            background: #FFF6FB;
-            box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
-            h3 {
-                font-family: 'Josefin Sans';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 26px;
-                line-height: 26px;
-                color: $navyblue;
-                margin-bottom: 11px;
-            }
-            p {
-                a {
-                    color: $pink;
-                    text-decoration: underline;
-                }
-            }
-            img {
-                text-align: right;
-                position: absolute;
-                left: 192px;
+}
+
+.ClockSec {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: auto;
+    @media screen and (max-width: 1180px) {
+        justify-content: space-around;
+    }
+    .Clock {
+        width: 410px;
+        height: 270px;
+        position: relative;
+        padding: 20px;
+        background: #FFF6FB;
+        box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+        @media screen and (max-width: 1180px) {
+            flex-basis: 30%;
+        }
+        h3 {
+            font-family: 'Josefin Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 26px;
+            color: $navyblue;
+            margin-bottom: 11px;
+        }
+        p {
+            a {
+                color: $pink;
+                text-decoration: underline;
             }
         }
-        .Clocked {
-            width: 410px;
-            height: 270px;
-            position: relative;
-            background: #EEEFFB;
-            padding: 20px;
-            box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
-            h3 {
-                font-family: 'Josefin Sans';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 26px;
-                line-height: 26px;
-                color: $navyblue;
-                margin-bottom: 11px;
-            }
-            p {
-                a {
-                    color: $pink;
-                    text-decoration: underline;
-                }
-            }
-            img {
-                text-align: right;
-                position: absolute;
-                Left: 80px;
+        img {
+            text-align: right;
+            position: absolute;
+            left: 192px;
+            @media screen and (max-width: 1180px) {
+                left: 140px;
                 bottom: 10px;
             }
         }
-        .Executive {
-            .ExecutiveChair {
+    }
+    .Clocked {
+        width: 410px;
+        height: 270px;
+        position: relative;
+        background: #EEEFFB;
+        padding: 20px;
+        box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+        @media screen and (max-width: 1180px) {
+            flex-basis: 30%;
+        }
+        h3 {
+            font-family: 'Josefin Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 26px;
+            color: $navyblue;
+            margin-bottom: 11px;
+        }
+        p {
+            a {
+                color: $pink;
+                text-decoration: underline;
+            }
+        }
+        img {
+            text-align: right;
+            position: absolute;
+            Left: 80px;
+            bottom: 10px;
+            @media screen and (max-width: 1180px) {
+                left: 40px;
+                bottom: 10px;
+            }
+        }
+    }
+    .Executive {
+        @media screen and (max-width: 1180px) {
+            flex-basis: 30%;
+        }
+        .ExecutiveChair {
+            display: flex;
+            align-items: center;
+            .Exe {
+                width: 107px;
+                background-color: #f5f6f8;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            p {
+                font-family: 'Josefin Sans';
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                color: $navyblue;
+                margin: 10px 0 0 9px;
+            }
+            span {
+                display: block;
+                margin-top: 10px;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+
+.DiscountSec {
+    background-color: transparent;
+    margin-top: 100px;
+    h4 {
+        text-align: center;
+    }
+    .LatestSec {
+        .Late {
+            li {
+                a {
+                    &::after {
+                        content: "\2022";
+                        color: $pink;
+                        font-weight: bold;
+                        margin-left: .5em;
+                        display: inline-block;
+                        visibility: hidden;
+                    }
+                    &:hover {
+                        color: $pink;
+                        text-decoration: underline;
+                        &::after {
+                            visibility: visible;
+                            text-decoration: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .BigSofa {
+        flex-direction: row-reverse;
+        img {
+            width: 600px;
+            flex-basis: 35%;
+            @media screen and (max-width: 1112px) {
+                width: 500px;
+            }
+        }
+        .UniqueFeatures {
+            flex-basis: 65%;
+            @media screen and (max-width: 1112px) {
+                flex-basis: 45%;
+            }
+            h5 {
+                color: $pink;
+                margin: 16px 0;
+            }
+            ul {
                 display: flex;
-                align-items: center;
-                .Exe {
-                    width: 107px;
-                    background-color: #f5f6f8;
-                    text-align: center;
-                    margin-bottom: 20px;
+                flex-wrap: wrap;
+                li {
+                    flex-basis: 50%;
+                    &::before {
+                        content: "\2713";
+                        color: #7569B2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.MiniCategories {
+    .Trending {
+        margin-top: 100px;
+        .Trend {
+            .TrendImg {
+                .Purchased {
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 149px;
+                        height: 149px;
+                    }
+                    &:hover {
+                        box-shadow: -9px 6px 0px #9877e7;
+                        transform: scale(1);
+                        transition: 1.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.NewsLater {
+    background-image: url(../images/Trending/Newslater.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 462px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    button {
+        width: 163px;
+        height: 50px;
+        background-color: $pink;
+        margin-top: 27px;
+        border: none;
+        color: $white;
+    }
+    h4 {
+        @include HeaderOnly;
+        width: 648px;
+        line-height: 60px;
+    }
+}
+
+.BrandSec {
+    max-width: 1140px;
+    width: 904px;
+    margin: auto;
+}
+
+.Essential {
+    margin-top: 100px;
+    .SupportOffer {
+        justify-content: space-between;
+        @media screen and (max-width: 1112px) {
+            justify-content: space-around;
+        }
+        .Support {
+            width: 370px;
+            box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+            border-radius: 5px;
+            img {
+                width: 100%;
+            }
+            @media screen and (max-width: 1112px) {
+                width: 318px;
+            }
+            &:hover {
+                .ReadMore {
+                    h4 {
+                        color: $pink;
+                    }
+                    a {
+                        color: $pink;
+                    }
+                }
+            }
+            .ReadMore {
+                text-align: left;
+                span {
+                    @include CotentP;
+                    display: inline-block;
+                    text-align: left;
+                    i {
+                        margin-right: 8px;
+                    }
+                    a {
+                        text-align: left;
+                        text-decoration: underline
+                    }
+                }
+                h4 {
+                    @include ContentH4;
+                    font-family: 'Josefin Sans';
+                    color: $navyblue;
+                    margin: 31px 0 17px 19px;
+                    text-align: left;
                 }
                 p {
-                    font-family: 'Josefin Sans';
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 19px;
-                    color: $navyblue;
-                    margin: 10px 0 0 9px;
-                }
-                span {
-                    display: block;
-                    margin-top: 10px;
-                    text-decoration: line-through;
-                }
-            }
-        }
-    }
-    
-    .DiscountSec {
-        background-color: transparent;
-        margin-top: 100px;
-        h4 {
-            text-align: center;
-        }
-        .LatestSec {
-            .Late {
-                li {
-                    a {
-                        &::after {
-                            content: "\2022";
-                            color: $pink;
-                            font-weight: bold;
-                            margin-left: .5em;
-                            display: inline-block;
-                            visibility: hidden;
-                        }
-                        &:hover {
-                            color: $pink;
-                            text-decoration: underline;
-                            &::after {
-                                visibility: visible;
-                                text-decoration: none !important;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .BigSofa {
-            flex-direction: row-reverse;
-            img {
-                width: 600px;
-                flex-basis: 35%;
-            }
-            .UniqueFeatures {
-                flex-basis: 65%;
-                h5 {
-                    color: $pink;
-                    margin: 16px 0;
-                }
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    li {
-                        flex-basis: 50%;
-                        &::before {
-                            content: "\2713";
-                            color: #7569B2;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    .MiniCategories {
-        .Trending {
-            margin-top: 100px;
-            .Trend {
-                .TrendImg {
-                    .Purchased {
-                        border-radius: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        img {
-                            width: 149px;
-                            height: 149px;
-                        }
-                        &:hover {
-                            box-shadow: -9px 6px 0px #9877e7;
-                            transform: scale(1);
-                            transition: 1.5s;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    .NewsLater {
-        background-image: url(../images/Trending/Newslater.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 462px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-bottom: 100px;
-        button {
-            width: 163px;
-            height: 50px;
-            background-color: $pink;
-            margin-top: 27px;
-            border: none;
-            color: $white;
-        }
-        h4 {
-            @include HeaderOnly;
-            width: 648px;
-            line-height: 60px;
-        }
-    }
-    
-    .BrandSec {
-        max-width: 1140px;
-        width: 904px;
-        margin: auto;
-    }
-    
-    .Essential {
-        margin-top: 100px;
-        .SupportOffer {
-            justify-content: space-between;
-            .Support {
-                width: 370px;
-                box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
-                border-radius: 5px;
-                &:hover {
-                    .ReadMore {
-                        h4 {
-                            color: $pink;
-                        }
-                        a {
-                            color: $pink;
-                        }
-                    }
-                }
-                .ReadMore {
                     text-align: left;
-                    span {
-                        @include CotentP;
-                        display: inline-block;
-                        text-align: left;
-                        i {
-                            margin-right: 8px;
-                        }
-                        a {
-                            text-align: left;
-                            text-decoration: underline
-                        }
-                    }
-                    h4 {
-                        @include ContentH4;
-                        font-family: 'Josefin Sans';
-                        color: $navyblue;
-                        margin: 31px 0 17px 19px;
-                        text-align: left;
-                    }
-                    p {
-                        text-align: left;
-                        width: 297px;
-                        margin: 0 0 14px 19px;
-                    }
+                    width: 297px;
+                    margin: 0 0 14px 19px;
                 }
             }
         }
     }
+}

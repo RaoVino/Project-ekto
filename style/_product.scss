@@ -1,0 +1,200 @@
+        .head {
+            .HeaderFirst {
+                .Contact {
+                    @media screen and (max-width: 450px) {
+                        margin-left: 30px;
+                    }
+                    p {
+                        a {
+                            @media screen and (max-width: 1282px) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .LinkSec {
+                    ul {
+                        li {
+                            &:nth-child(2)::after {
+                                @media screen and (max-width: 450px) {
+                                    visibility: hidden;
+                                    align-items: flex-start;
+                                }
+                            }
+                            &:nth-child(1)::after {
+                                @media screen and (max-width: 450px) {
+                                    visibility: hidden;
+                                }
+                            }
+                            a {
+                                @media screen and (max-width: 450px) {
+                                    visibility: hidden;
+                                }
+                                i {
+                                    visibility: visible;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .HeaderSecond {
+            .HomeLink {
+                ul {
+                    @media screen and (max-width: 450px) {
+                        display: none;
+                    }
+                    li {}
+                }
+            }
+            .LoginSec {
+                input {
+                    @media screen and (max-width: 1282px) {
+                        width: 50px;
+                    }
+                    @media screen and (max-width: 450px) {
+                        width: 150px;
+                        margin-left: 50px;
+                    }
+                }
+                i {
+                    @media screen and (max-width: 1282px) {
+                        height: 29px;
+                    }
+                }
+            }
+        }
+        
+        .productBannerSec {
+            background: #F6F5FF;
+            height: 50vh;
+            .container {
+                .gridDefault {
+                    padding: 100px 0;
+                    h4 {
+                        @include HeaderOnly;
+                        margin: 0;
+                        color: #101750;
+                        @media screen and (max-width: 450px) {
+                            margin-bottom: 50px;
+                        }
+                    }
+                    ul {
+                        display: flex;
+                        @media screen and (max-width: 450px) {
+                            display: block;
+                        }
+                        li {
+                            margin-right: 10px;
+                            @media screen and (max-width: 450px) {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .container {
+            .inputSection {
+                display: flex;
+                @media screen and (max-width: 1282px) {
+                    display: block;
+                }
+                .Acceories {
+                    flex-basis: 40%;
+                    h5 {
+                        @include FooterLi;
+                        color: $navyblue;
+                        width: 389px;
+                    }
+                    p {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: rgba(26, 11, 91, 0.3);
+                        margin-bottom: 13px;
+                    }
+                }
+                .page {
+                    input {
+                        width: 100px;
+                        @media screen and (max-width: 782px) {
+                            width: 50px;
+                        }
+                        @media screen and (max-width: 450px) {
+                            display: block;
+                        }
+                    }
+                    label {
+                        @include FooterPara;
+                        color: $OffNavyBlue;
+                    }
+                    select {
+                        margin-right: 10px;
+                        @media screen and (max-width: 450px) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .ChairContent.pro {
+            .Content {
+                flex-wrap: wrap;
+                margin-top: 100px;
+                @media screen and (max-width: 450px) {
+                    display: block;
+                }
+                .ChairImg {
+                    .Purchase {
+                        .Font {
+                            position: absolute;
+                            top: 135px;
+                            left: 10px;
+                            i {
+                                display: block;
+                                margin-bottom: 8px;
+                            }
+                        }
+                    }
+                    margin-bottom: 30px;
+                    .Cantilever {
+                        span {
+                            display: inline;
+                            &:nth-child(4) {
+                                color: $pink;
+                                text-decoration: line-through;
+                            }
+                        }
+                        .colors {
+                            margin-bottom: 15px;
+                            div {
+                                height: 10px;
+                                &:nth-child(1) {
+                                    opacity: 1;
+                                    background-color: #DE9034;
+                                }
+                                &:nth-child(2) {
+                                    opacity: 1;
+                                    background-color: $pink;
+                                }
+                                &:nth-child(3) {
+                                    opacity: 1;
+                                    background-color: #8568FF;
+                                }
+                                &:hover {
+                                    transform: scale(1.1);
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
